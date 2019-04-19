@@ -34,15 +34,3 @@ class Stack:
 
     def __len__(self):
         return self.head + 1
-
-"""stack = Stack(1)
-print(stack.__len__())
-stack.push(12)
-try:
-    stack.push(12)
-except StackOverflowError:
-    print('StackOverflowError')
-print(stack.__len__())
-stack.pop()
-stack.pop()
-print(stack.__len__())"""
