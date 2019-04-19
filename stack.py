@@ -27,9 +27,10 @@ class Stack:
         if self.head == -1:
             raise StackIsEmptyError()
         else:
-            return self.storage[self.head]
+            out_num = self.storage[self.head]
             self.storage[self.head] = 0
             self.head -= 1
+            return out_num
 
     def __len__(self):
         return self.head + 1
